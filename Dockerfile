@@ -9,6 +9,6 @@ COPY . /wepapps
 # RUN yarn build
 
 # Building the app
-RUN pnpm store prune
+RUN yarn cache clean
 RUN pnpm
 RUN pnpm build
