@@ -1,14 +1,9 @@
-FROM node:20-alpine
+FROM node:21
 
 WORKDIR /wepapps
 COPY . /wepapps
 
-# # Building the app
-# RUN yarn cache clean
-# RUN yarn
-# RUN yarn build
-
 # Building the app
 RUN yarn cache clean
-RUN pnpm
-RUN pnpm build
+RUN yarn
+RUN yarn build
