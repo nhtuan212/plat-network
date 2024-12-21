@@ -22,7 +22,7 @@ export default function HomePage() {
                                 display: "utf8", //hex,utf8
                             },
                         })
-                        .then((response) => {
+                        .then((response: any) => {
                             console.log(response);
                         });
                 }}
